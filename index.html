@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Website-1</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="hero">
+        <nav>
+            <img src="images/menu.png" class="menu-img" style="height: 25px">
+            <img src="images/logo.png" class="logo" style="height: 50px">
+            <ul>
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">About</a></li>
+                <li> <a href="#">Contact</a></li>
+                <li> <a href="#">Off</a></li>
+            </ul>
+            <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+            <ul id="on">
+                <li> <a href="#">On</a></li>
+            </ul>
+        </nav>
+        <div class="lamp-container">
+            <img src="images/lamp.png" class="lamp" style="height: 250px; width: 120px; ">
+            <img src=" images/light.png" class="light" id="light" style="height:400px; width: 420px;">
+        </div>
+        <div class="text-container">
+            <h1>Click on <br>the button</h1>
+            <p><br>Click on the button available in the navigation bar to turn on-off the lamp.The lamp got this feature by
+                implementing some javascript function.</p>
+            <a href="https://shubhamkumar707.wixsite.com/resume" target="_blank">Resume Website</a>
+            <div class="control">
+                <p>Bad</p>
+                <div class="line"><span></span></div>
+                <p>Good</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var btn = document.getElementById("btn");
+        var light = document.getElementById("light");
+        function toggleBtn() {
+            btn.classList.toggle("active");
+            light.classList.toggle("on");
+        }
+    </script>
+</body>
+
+</html>
