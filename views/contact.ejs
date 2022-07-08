@@ -1,0 +1,28 @@
+
+<%-include('common/header')-%>
+
+<h1>Hello ejs content!</h1>
+<h3><%= name%></h3>
+    
+    <p>
+    <h3>Id is <%=id%></h3>
+    </p>
+
+    <p>
+    <h2>
+        <%if(id>1){%>
+            <h2>The id was greater than 1 and the id was <%=id%></h2>
+            <%}else{%>
+                <h2>Blog</h2>
+            <%}%>
+    </h2>
+    </p>
+
+
+    <ul>
+        <%blogs.forEach(function(items){%>
+            <li><h3><%=items%></h3></li>
+            <%}); %>
+    </ul>
+
+    <%-include('common/footer')-%>
