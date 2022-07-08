@@ -11,6 +11,10 @@ app.get('/',(req,res)=>{
     res.sendFile('index.html');
 });
 
+app.get('/',(req,res)=>{
+    res.send('Welcome to website');
+});
+
 app.listen(PORT,()=>{
     console.log(`server is listening at PORT http://localhost:${PORT}`);
 })
